@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart'; // https://api.flutter.dev/flutter/material/material-library.html
 import './mockdata.dart';
 
-class DemoDart extends StatelessWidget {
-  const DemoDart({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-
+class GridViewDart extends StatelessWidget {
+  const GridViewDart({Key? key}) : super(key: key);
 
   List<Widget> _getData() {
 
@@ -68,6 +64,10 @@ class DemoDart extends StatelessWidget {
         )
       );
   }
+
+  @override
+  Widget build(BuildContext context) {
+
     // return GridView.count(
     //   crossAxisCount: 2,
     //   crossAxisSpacing: 20.0, // 水平间距
@@ -76,7 +76,11 @@ class DemoDart extends StatelessWidget {
     //   padding: const EdgeInsets.all(20.0),
     //   children: _getData(),
     // );
-    return GridView.builder(
+  return Scaffold(
+    appBar: AppBar(
+      title: const Text("GridView"),
+    ),
+    body: GridView.builder(
       itemBuilder: _getBuilderData,
       itemCount: mockData.length,
       padding: const EdgeInsets.all(20.0),
@@ -85,6 +89,7 @@ class DemoDart extends StatelessWidget {
           crossAxisSpacing: 20.0, // 水平间距
           mainAxisSpacing: 20.0,
       ),
-    );
-  }
+    )
+  );
+}
 }

@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart'; // https://api.flutter.dev/flutter/material/material-library.html
 
-class DemoDart extends StatelessWidget {
-  const DemoDart({Key? key}) : super(key: key);
+class WrapDart extends StatelessWidget {
+  const WrapDart({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Wrap(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Wrap")
+      ),
+      body: Wrap(
       spacing: 10,
       runSpacing: 10,
       // direction: Axis.vertical,
@@ -44,6 +48,7 @@ class DemoDart extends StatelessWidget {
           )
         );
       }),
+    )
     );
   }
 }

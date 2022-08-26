@@ -18,16 +18,40 @@ class _CounterState extends State<Counter> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Container(
+      width: 600,
+      child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      textDirection: TextDirection.ltr,
       children: <Widget>[
-        ElevatedButton(
+        MaterialButton(
           onPressed: _increment,
-          child: const Text('Increment'),
+          color: Colors.blue,
+          child: const Text('Increment', textDirection: TextDirection.ltr),
         ),
         const SizedBox(width: 16),
-        Text('Count: $_counter'),
+        Text('Count: $_counter', textDirection: TextDirection.ltr,),
       ],
+    ),
+    );
+  }
+}
+
+class StatefulDemo extends StatefulWidget {
+  const StatefulDemo({super.key});
+
+  @override
+  State<StatefulDemo> createState() => _StatefulDemoState();
+}
+
+class _StatefulDemoState extends State<StatefulDemo> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("状态组件"),
+      ),
+      body: const Counter()
     );
   }
 }

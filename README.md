@@ -29,5 +29,9 @@ samples, guidance on mobile development, and a full API reference.
 《flutter实战·第二版》https://book.flutterchina.club/preface.html
 《老孟 组件大全》http://laomengit.com/flutter/widgets/widgets_structure.html
 《官方文档》https://docs.flutter.dev
-《Flutter中文官方文档》https://flutter.cn/docs/development/ui/widgets， https://api.flutter-io.cn/flutter/widgets/Stack-class.html
+《Flutter中文官方文档》
+  - https://flutter.cn/docs/development/ui/widgets
+  - 英文： https://docs.flutter.dev/cookbook
+  - https://api.flutter-io.cn/flutter/widgets/Stack-class.html
+  - https://flutter.cn/docs/cookbook#navigation
 《Flutter Medium社区》https://medium.com/flutter-community

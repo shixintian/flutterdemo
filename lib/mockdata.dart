@@ -1,3 +1,3 @@
 List mockData = List.generate(20, (idx) {
-    return { "title": "我是标题$idx", "content": "我是内容$idx" };
+    return { "title": "小红$idx", "content": "$idx 岁", "list": ["最伟大的作品", "稻香"] };
 });

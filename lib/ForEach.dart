@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart'; // https://api.flutter.dev/flutter/material/material-library.html
 
-class DemoDart extends StatelessWidget {
+class ForEachDart extends StatelessWidget {
 
-  const DemoDart({Key? key}) : super(key: key);
+  const ForEachDart({Key? key}) : super(key: key);
 
   // List<Widget> _getData() {
   //   List data = [
@@ -54,6 +54,11 @@ class DemoDart extends StatelessWidget {
     // return ListView(
     //   children: _getData(),
     // );
-    return _getData();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("foreach")
+      ),
+      body: _getData()
+    );
   }
 }

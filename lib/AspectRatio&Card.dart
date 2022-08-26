@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart'; // https://api.flutter.dev/flutter/material/material-library.html
 
-class DemoDart extends StatelessWidget {
-  const DemoDart({Key? key}) : super(key: key);
+class AsCardDart extends StatelessWidget {
+  const AsCardDart({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Card")
+      ),
+      body: ListView(
       children: <Widget>[
         Card(
           child: Column(
@@ -47,6 +51,7 @@ class DemoDart extends StatelessWidget {
           ),
         ),
       ],
+    )
     );
   }
 }

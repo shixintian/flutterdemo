@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart'; // https://api.flutter.dev/flutter/material/material-library.html
 
-class DemoDart extends StatelessWidget {
-  const DemoDart({Key? key}) : super(key: key);
+class StackDart extends StatelessWidget {
+  const StackDart({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Stack")
+      ),
+      body: Container(
       height: 600,
       width: 400,
       color: Colors.green,
@@ -34,6 +38,7 @@ class DemoDart extends StatelessWidget {
           ))
         ],
       )
+    )
     );
   }
 }

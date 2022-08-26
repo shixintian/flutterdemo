@@ -5,7 +5,11 @@ class BasicStyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("基础样式")
+      ),
+      body: Container(
           // margin: const EdgeInsets.all(10.0),
           width: 300.0,
           height: 300.0,
@@ -42,7 +46,8 @@ class BasicStyle extends StatelessWidget {
             maxLines: 1,
             textScaleFactor: 1,
           )
-        );
+        ),
+    );
   }
 
 }

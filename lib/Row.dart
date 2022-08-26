@@ -18,12 +18,16 @@ class IconContainer extends StatelessWidget {
   }
 }
 
-class DemoDart extends StatelessWidget {
-  const DemoDart({Key? key}) : super(key: key);
+class RowDart extends StatelessWidget {
+  const RowDart({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Row"),
+      ),
+      body: Container(
       height: 600.0,
       width: 400.0,
       color: Colors.blue[50],
@@ -52,6 +56,7 @@ class DemoDart extends StatelessWidget {
           IconContainer(Icons.settings, color: Colors.yellow)
         ],
       )
+    )
     );
   }
 }
