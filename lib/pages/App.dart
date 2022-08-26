@@ -54,7 +54,7 @@ class _AppDartState extends State<AppDart> {
                 children: const [
                   Expanded(child: UserAccountsDrawerHeader(
                     accountName: Text("心心"),
-                    accountEmail: Text("8093fa3@jd.com"),
+                    accountEmail: Text("8093fa3@qq.com"),
                     currentAccountPicture: CircleAvatar(
                       backgroundImage: AssetImage('images/daotian.png'),
                     ),
